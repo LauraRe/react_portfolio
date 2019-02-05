@@ -34,3 +34,7 @@
 .content-text {
     @apply text-grey-dark;
 }
+
+.link-text {
+    @apply text-white hover:text-grey no-underline;
+}
