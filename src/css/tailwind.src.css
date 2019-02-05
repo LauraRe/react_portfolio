@@ -36,5 +36,5 @@
 }
 
 .link-text {
-    @apply text-white hover:text-grey no-underline;
+    @apply text-white text-grey no-underline;
 }
