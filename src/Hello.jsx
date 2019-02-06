@@ -4,11 +4,9 @@ import React, { Component } from "react"
 export const Header = class Header extends React.Component {
     render() {
         return (
-            <header class="container-fluid">
-                <div class="header">
-                    <h1>Welcome to my portfolio</h1>
-                    <h3>I'm a Full Stack Developer!</h3>
-                </div>
+            <header class="header">
+                <h1>Welcome to my portfolio</h1>
+                <h3>A Full Stack Developer in training!</h3>
             </header>
         );
     }
@@ -17,9 +15,9 @@ export const Header = class Header extends React.Component {
 export const Intro = class Intro extends React.Component {
     render() {
         return (
-            <section class="container-fluid section-sobre">
+            <section class="container mx-auto">
                 <h2 class="intro" id="intro">About Me</h2>
-                <div class="container sobre-container d-md-flex justify-content-md-around">
+                <div>
                     <div class="p-2 align-self-md-start">
                         <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
                     </div>
@@ -35,37 +33,56 @@ export const Intro = class Intro extends React.Component {
 export const Portfolio = class Portfolio extends React.Component {
     render() {
         return (
-            <section class="portfolio container-fluid">
+            <section class="portfolio">
                 <h2 id="portfolio">Portfolio</h2>
-                <div class="container contenedor-portfolio d-md-flex flex-md-wrap">
-                    <article>
-                        <div class="jod-desc">
-                            <h3>Title</h3>
-                            <p>Suspendisse sollicitudin tempus tellus a faucibus.</p>
+                <div class="container mx-auto">
+                    <div class="flex">
+                        <div class="w-1/2 p-5">
+                            <a href="https://laurare.github.io/">
+                                <article class="w-full">
+                                    <div class="jod-desc">
+                                        <h3>My First Webpage</h3>
+                                        <p>The very first webpage that I have ever created.</p>
+                                    </div>
+                                    <img src="./img/MyFirstWebpage.png" class="img-fluid" />
+                                </article>
+                            </a>
+                            <a href="https://github.com/LauraRe/LauraRe.github.io"><button class="btn">=> See MyFirstWebsite Code On GitHub</button></a>
                         </div>
-                        <img src="https://cdn-images-1.medium.com/max/2000/1*Aw-yy-9nb2_SZS5RcnyLVA.jpeg" class="img-fluid" />
-                    </article>
-                    <article>
-                        <div class="jod-desc">
-                            <h3>FizzBuzz</h3>
-                            <p>FizzBuzz challenge in JavaScript.</p>
+                        <div class="w-1/2 p-5">
+                            <a href="https://laurare.github.io/fizzbuzz_js/">
+                                <article class="w-full">
+                                    <div class="jod-desc">
+                                        <h3>FizzBuzz</h3>
+                                        <p>FizzBuzz challenge in JavaScript.</p>
+                                    </div>
+                                    <img src="./img/FizzBuzz_js1.png" class="img-fluid" />
+                                </article>
+                            </a>
+                            <a href="https://github.com/LauraRe/fizzbuzz_js"><button class="btn">=> See FizzBuzz Code on GitHub</button></a>
                         </div>
-                        <img src="./img/FizzBuzz_js1.png" class="img-fluid" />
-                    </article>
-                    <article>
-                        <div class="jod-desc">
-                            <h3>Title</h3>
-                            <p>Suspendisse sollicitudin tempus tellus a faucibus.</p>
+                    </div>
+
+                    <div class="flex">
+                        <div class="w-1/2 p-5">
+                            <article class="w-full">
+                                <div class="jod-desc">
+                                    <h3>My First Webpage</h3>
+                                    <p>The very first webpage that I have ever created.</p>
+                                </div>
+                                <img src="./img/MyFirstWebpage.png" class="img-fluid" />
+                            </article>
                         </div>
-                        <img src="https://cms-assets.tutsplus.com/uploads/users/988/posts/30356/image/Pure.jpg" class="img-fluid" />
-                    </article>
-                    <article>
-                        <div class="jod-desc">
-                            <h3>Title</h3>
-                            <p>Suspendisse sollicitudin tempus tellus a faucibus.</p>
+                        <div class="w-1/2 p-5">
+                            <article class="w-full">
+                                <div class="jod-desc">
+                                    <h3>FizzBuzz</h3>
+                                    <p>FizzBuzz challenge in JavaScript.</p>
+                                </div>
+                                <img src="./img/FizzBuzz_js1.png" class="img-fluid" />
+                            </article>
                         </div>
-                        <img src="https://cdn.dribbble.com/users/1520719/screenshots/3527107/app_landing_page_5-dribbble-white-2.png" class="img-fluid" />
-                    </article>
+                    </div>
                 </div>
             </section>
 
@@ -76,7 +93,7 @@ export const Portfolio = class Portfolio extends React.Component {
 export const Contact = class Contact extends React.Component {
     render() {
         return (
-            <section class="container mx-auto">
+            <section class="contact container mx-auto">
                 <h3 id="contact">Contact</h3>
                 <form class="w-full items-center">
                     <div class="flex items-center border-b border-b-2 border-teal my-10">
