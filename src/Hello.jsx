@@ -17,13 +17,11 @@ export const Intro = class Intro extends React.Component {
         return (
             <section class="container mx-auto">
                 <h2 class="intro" id="intro">About Me</h2>
-                <div>
-                    <div class="p-2 align-self-md-start">
-                        <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
-                    </div>
-                    <div class="p-2 align-self-md-end">
-                        <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.
-              </p></div>
+                <div class="self-start">
+                    <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
+                </div>
+                <div class="self-end">
+                    <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
                 </div>
             </section>
         );
@@ -50,10 +48,25 @@ export const Portfolio = class Portfolio extends React.Component {
                             <a href="https://github.com/LauraRe/LauraRe.github.io"><button class="btn">=> See MyFirstWebsite Code On GitHub</button></a>
                         </div>
                         <div class="w-1/2 p-5">
+                            <a href="https://laurare.github.io/bmi_challenge/src">
+                                <article class="w-full">
+                                    <div class="jod-desc">
+                                        <h3>Body Mass Index (BMI)</h3>
+                                        <p>A JavaScript program that calculates an individual`s BMI index with metric and imperial methods.</p>
+                                    </div>
+                                    <img src="./img/bmi.png" class="img-fluid" />
+                                </article>
+                            </a>
+                            <a href="https://github.com/LauraRe/bmi_challenge"><button class="btn">=> See BMI Code on GitHub</button></a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="w-1/2 p-5">
                             <a href="https://laurare.github.io/fizzbuzz_js/">
                                 <article class="w-full">
                                     <div class="jod-desc">
-                                        <h3>FizzBuzz</h3>
+                                        <h3></h3>
                                         <p>FizzBuzz challenge in JavaScript.</p>
                                     </div>
                                     <img src="./img/FizzBuzz_js1.png" class="img-fluid" />
@@ -61,25 +74,13 @@ export const Portfolio = class Portfolio extends React.Component {
                             </a>
                             <a href="https://github.com/LauraRe/fizzbuzz_js"><button class="btn">=> See FizzBuzz Code on GitHub</button></a>
                         </div>
-                    </div>
-
-                    <div class="flex">
-                        <div class="w-1/2 p-5">
-                            <article class="w-full">
-                                <div class="jod-desc">
-                                    <h3>My First Webpage</h3>
-                                    <p>The very first webpage that I have ever created.</p>
-                                </div>
-                                <img src="./img/MyFirstWebpage.png" class="img-fluid" />
-                            </article>
-                        </div>
                         <div class="w-1/2 p-5">
                             <article class="w-full">
                                 <div class="jod-desc">
                                     <h3>FizzBuzz</h3>
                                     <p>FizzBuzz challenge in JavaScript.</p>
                                 </div>
-                                <img src="./img/FizzBuzz_js1.png" class="img-fluid" />
+                                <img src="" class="img-fluid" />
                             </article>
                         </div>
                     </div>
