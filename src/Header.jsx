@@ -1,10 +1,10 @@
 import React from "react"
 import { NavLink, Link } from 'react-router-dom';
 
-const Header = () => {
+const Navigation = () => {
     return (
-        <nav className="header">
-            <h1 className="header-title">
+        <nav className="navigation">
+            <h1 className="navigation-title">
                 <Link className="link-text" to='/'>My Portfolio</Link>
             </h1>
             <ul className="list-reset flex">
@@ -15,4 +15,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Navigation

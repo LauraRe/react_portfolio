@@ -38,3 +38,261 @@
 .link-text {
     @apply text-white text-grey no-underline;
 }
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+}
+
+li a {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.fas.fa-bars {
+  font-size: 1.9rem;
+  color: white;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'EB Garamond', serif;
+  margin-top: 20px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: 1px;
+}
+
+header {
+  padding-top: 50px;
+  background-color: #00B288;
+  height: 100vh;
+}
+
+h2.intro {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.7rem;
+  color: #00B288;
+  font-weight: bolder;
+  font-family: 'Khula', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-intro {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.p-2 p {
+  font-family: 'Karma';
+  font-size: 1.1rem;
+}
+
+article {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  transition: all 1s;
+}
+
+article:hover > .img-fluid {
+  transform: scale(1.1);
+}
+
+article:hover > .jod-desc {
+  transform: translateX(0);
+  visibility: inherit;
+}
+
+.jod-desc {
+  padding: 15px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all .5s;
+  z-index: 2;
+  transform: translateX(-100%);
+}
+.jod-desc h3 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+}
+.jod-desc p {
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+}
+
+.portfolio {
+  background-color: #00B288;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#portfolio, #meetme {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.7rem;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Khula', sans-serif;
+}
+
+#contact {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.7rem;
+  color: #00B288;
+  font-weight: bolder;
+  font-family: 'Khula', sans-serif;
+}
+
+.contact {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+input, textarea {
+  font-family: 'EB Garamond', serif;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #00B288;
+}
+
+.form-control-lg {
+  border-radius: unset;
+}
+
+.btn {
+  background-color: #DC3545;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px black;
+  transition: all .5s;
+}
+.btn:hover {
+  background-color: #c42f3b;
+}
+
+.fab {
+  font-size: 2rem;
+  padding: 20px;
+  background: linear-gradient(70deg, #DC3545, #f73b4b);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .5s;
+  margin: 5px;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+.fa-facebook-f {
+  padding: 20px 26px;
+}
+
+footer {
+  background-color: #00B288;
+  padding: 150px 0;
+}
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#hecho {
+  background-color: #DC3545;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h6 {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .p-2 {
+    width: 45%;
+  }
+
+  article {
+    width: 50%;
+    height: 42vh;
+    display: inline-block;
+  }
+
+  .formulario {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  footer .container {
+    width: 60%;
+  }
+
+  article {
+    height: 56vh;
+  }
+}
