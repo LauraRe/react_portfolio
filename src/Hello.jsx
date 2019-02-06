@@ -60,7 +60,7 @@ export const Portfolio = class Portfolio extends React.Component {
                             <a href="https://github.com/LauraRe/bmi_challenge"><button class="btn">=> See BMI Code on GitHub</button></a>
                         </div>
                     </div>
-                    
+
                     <div class="flex">
                         <div class="w-1/2 p-5">
                             <a href="https://laurare.github.io/fizzbuzz_js/">
@@ -75,13 +75,16 @@ export const Portfolio = class Portfolio extends React.Component {
                             <a href="https://github.com/LauraRe/fizzbuzz_js"><button class="btn">=> See FizzBuzz Code on GitHub</button></a>
                         </div>
                         <div class="w-1/2 p-5">
-                            <article class="w-full">
-                                <div class="jod-desc">
-                                    <h3>FizzBuzz</h3>
-                                    <p>FizzBuzz challenge in JavaScript.</p>
-                                </div>
-                                <img src="" class="img-fluid" />
-                            </article>
+                            <a href="https://laurare.github.io/address_book_challenge/">
+                                <article class="w-full">
+                                    <div class="jod-desc">
+                                        <h3>Address Book</h3>
+                                        <p>Address Book Webpage where you can manage your contacts.</p>
+                                    </div>
+                                    <img src="./img/AddressBook.png" class="img-fluid" />
+                                </article>
+                            </a>
+                            <a href="https://github.com/LauraRe/address_book_challenge"><button class="btn">=> See Address Book Code on GitHub</button></a>
                         </div>
                     </div>
                 </div>
