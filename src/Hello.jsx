@@ -1,12 +1,19 @@
 import React, { Component } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
 
 
 export const Header = class Header extends React.Component {
     render() {
         return (
-            <header class="header min-h-screen">
+            <header className="header min-h-screen">
                 <h1>Welcome to my portfolio</h1>
                 <h3>A Full Stack Developer in training!</h3>
+                <ul>
+                    <li><FontAwesomeIcon icon={faGithub} /></li>
+                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                    <li><FontAwesomeIcon icon={faFacebook} /></li>
+                </ul>
             </header>
         );
     }
@@ -18,12 +25,32 @@ export const Intro = class Intro extends React.Component {
             <section>
                 <h2 class="intro" id="intro">About Me</h2>
                 <div class="container mx-auto">
-                    <div class="flex">
+                    <div class="flex font-body text-lg">
                         <div class="w-1/2 pr-5">
-                            <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
+                            <p class="text-center leading-normal pt-10">I am currently enrolled in CraftAcademy's full-stack web developer bootcamp. I also have a master's degree in Functional Genomics and some experience in the Molecular Biology field in general. </p>
                         </div>
-                        <div class="w-1/2 pl-5">
-                            <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
+                        <div class="w-1/2 px-16">
+                            <p class="text-center">Here's a few of the tools I use</p>
+                            <div class="container mx-auto font-title">
+                                <div class="flex">
+                                    <div class="w-1/2 p-5">
+                                        <div class="list-reset text-center leading-loose">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>React</li>
+                                            <li></li>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2 p-5">
+                                        <div class="list-reset text-center leading-loose">
+                                            <li>Ruby</li>
+                                            <li>RSpec</li>
+                                            <li>Vanilla JavaScript</li>
+                                            <li>Cucumber-js</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +129,7 @@ export const Contact = class Contact extends React.Component {
     render() {
         return (
             <section class="contact container mx-auto">
-                <h3 id="contact">Contact</h3>
+                <h2 id="contact">Contact</h2>
                 <form class="w-full items-center">
                     <div class="flex items-center border-b border-b-2 border-teal my-10">
                         <input

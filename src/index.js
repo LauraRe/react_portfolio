@@ -8,7 +8,10 @@ import { BrowserRouter } from 'react-router-dom'
 import Projects from "./Projects"
 import About from "./About"
 import { Switch, Route } from 'react-router-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faGithub, faLinkedin, faFacebook} from '@fortawesome/free-brands-svg-icons'
 
+library.add(faGithub, faLinkedin, faFacebook);
 
 const App = () => {
     return (

@@ -41,6 +41,7 @@ class Projects extends Component {
                         <UndrawCreativity />
                     </div>
                     <div className="w-3/4">
+                        <h1>Ongoing Projects</h1>
                         <p>These are projects I am currently working on.</p>
                     </div>
                 </div>
