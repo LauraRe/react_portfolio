@@ -41,8 +41,7 @@ class Projects extends Component {
                         <UndrawCreativity />
                     </div>
                     <div className="w-3/4">
-                        <h1>My Projects</h1>
-                        <p>This is a selection of some of my projects I have been working on.</p>
+                        <p>These are projects I am currently working on.</p>
                     </div>
                 </div>
                 <div className="flex flex-wrap -mx-1 lg:-mx-4">

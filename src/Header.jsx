@@ -8,8 +8,9 @@ const Navigation = () => {
                 <Link className="link-text" to='/'>My Portfolio</Link>
             </h1>
             <ul className="list-reset flex">
-                <li className="mr-6"><NavLink className="link-text" activeStyle={{ fontWeight: "bold" }} to='/about'>About Me</NavLink></li>
-                <li className="mr-6"><NavLink className="link-text" activeStyle={{ fontWeight: "bold" }} to='/projects'>My Projects</NavLink></li>
+                <li className="mr-6"><a className="link-text" activeStyle={{ fontWeight: "bold" }} href='#intro'>About Me</a></li>
+                <li className="mr-6"><a className="link-text" activeStyle={{ fontWeight: "bold" }} href='#portfolio'>Portfolio</a></li>
+                <li className="mr-6"><NavLink className="link-text" activeStyle={{ fontWeight: "bold" }} to='/projects'>Ongoing Projects</NavLink></li>
             </ul>
         </nav>
     )

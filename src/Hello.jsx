@@ -4,7 +4,7 @@ import React, { Component } from "react"
 export const Header = class Header extends React.Component {
     render() {
         return (
-            <header class="header">
+            <header class="header min-h-screen">
                 <h1>Welcome to my portfolio</h1>
                 <h3>A Full Stack Developer in training!</h3>
             </header>
@@ -15,13 +15,17 @@ export const Header = class Header extends React.Component {
 export const Intro = class Intro extends React.Component {
     render() {
         return (
-            <section class="container mx-auto">
+            <section>
                 <h2 class="intro" id="intro">About Me</h2>
-                <div class="self-start">
-                    <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
-                </div>
-                <div class="self-end">
-                    <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
+                <div class="container mx-auto">
+                    <div class="flex">
+                        <div class="w-1/2 pr-5">
+                            <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
+                        </div>
+                        <div class="w-1/2 pl-5">
+                            <p class="text-justify">Vestibulum consequat lacus at scelerisque mattis. In egestas posuere sapien. Nunc a maximus arcu, eget commodo lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque volutpat tellus. Ut at felis vitae odio lobortis convallis. Donec nec molestie eros, in viverra purus. Mauris luctus vestibulum nisi, in interdum lacus imperdiet dictum.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         );
@@ -66,7 +70,7 @@ export const Portfolio = class Portfolio extends React.Component {
                             <a href="https://laurare.github.io/fizzbuzz_js/">
                                 <article class="w-full">
                                     <div class="jod-desc">
-                                        <h3></h3>
+                                        <h3>FizzBuzz</h3>
                                         <p>FizzBuzz challenge in JavaScript.</p>
                                     </div>
                                     <img src="./img/FizzBuzz_js1.png" class="img-fluid" />
@@ -79,7 +83,7 @@ export const Portfolio = class Portfolio extends React.Component {
                                 <article class="w-full">
                                     <div class="jod-desc">
                                         <h3>Address Book</h3>
-                                        <p>Address Book Webpage where you can manage your contacts.</p>
+                                        <p>A simple address book page where you can manage your contacts.</p>
                                     </div>
                                     <img src="./img/AddressBook.png" class="img-fluid" />
                                 </article>
