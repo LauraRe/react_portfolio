@@ -5,12 +5,12 @@ const Navigation = () => {
     return (
         <nav className="navigation">
             <h1 className="navigation-title">
-                <Link className="link-text" to='/'>My Portfolio</Link>
+                <Link className="link-text" to='/'>Laura Reale</Link>
             </h1>
             <ul className="list-reset flex">
-                <li className="mr-6"><a className="link-text" activeStyle={{ fontWeight: "bold" }} href='#intro'>About Me</a></li>
-                <li className="mr-6"><a className="link-text" activeStyle={{ fontWeight: "bold" }} href='#portfolio'>Portfolio</a></li>
-                <li className="mr-6"><NavLink className="link-text" activeStyle={{ fontWeight: "bold" }} to='/projects'>Ongoing Projects</NavLink></li>
+                <li className="mr-6"><a className="link-text" href='#intro'>About Me</a></li>
+                <li className="mr-6"><a className="link-text" href='#portfolio'>Portfolio</a></li>
+                <li className="mr-6"><a className="link-text" href='#contact'>Contact</a></li>
             </ul>
         </nav>
     )
