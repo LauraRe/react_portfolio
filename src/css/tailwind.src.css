@@ -106,6 +106,26 @@ header {
 #meetme {
     @apply bg-blue-darkest text-white w-full flex flex-col items-center justify-center;
 }
+
+#cv-title {
+    @apply text-black text-center font-title text-5xl;
+    letter-spacing: 1px;
+}
+
+#cv-list {
+    @apply text-black text-center font-title font-bold text-2xl;
+    letter-spacing: 1px;
+}
+
+#cv-details {
+    @apply text-black text-center font-title font-semibold text-lg;
+    letter-spacing: 1px;
+}
+
+#cv-when {
+    @apply text-black text-center font-title text-lg pt-5;
+    letter-spacing: 1px;
+}
   
 section {
   padding-top: 120px;

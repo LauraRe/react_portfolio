@@ -24,10 +24,17 @@ class Cv extends Component {
         let cvList
 
         if (cv.length > 0) {
-            cvList = cv.map(cv => {
+            cvList = cv.map((cvDetail, index) => {
                 return (
-                    <div key={cv.id} className="min-h-900 my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <ProjectCard cv={cv} />
+                    <div key={cvDetail.id}>
+                        <div>
+                            <p id="cv-when">{cvDetail.when}</p>
+                            <h3 id="cv-list">{cvDetail.name}</h3>
+                        </div>
+                        <div id="cv-details" className="font-body">
+                            <p>{cvDetail.place}</p>
+                            <p>{cvDetail.location}</p>
+                        </div>
                     </div>
                 )
             })
@@ -36,15 +43,17 @@ class Cv extends Component {
         return (
             <div className="content-wrapper">
                 <div className="flex mb-4">
-                    <div className="w-1/4">
-                        <UndrawCreativity />
+                    <div className="w-1/2 pr-5">
+                        <div className="px-20">
+                            <img src='./img/laurareale.jpeg' className='rounded-full mx-32'></img>
+                        </div>
+                        <div className="w-3/4">
+                        </div>
                     </div>
-                    <div className="w-3/4">
-                        <h1>CV Laura Reale</h1>
+                    <div className="text-black">
+                        <h1 id="cv-title" className="p-10">Curriculum Vitae</h1>
+                        {cvList}
                     </div>
-                </div>
-                <div className="flex flex-wrap -mx-1 lg:-mx-4">
-                    {cvList}
                 </div>
             </div>
         )
