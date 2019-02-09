@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(faGithub, faEnvelope, faLinkedin)
@@ -29,20 +29,23 @@ export const Intro = class Intro extends React.Component {
             <section id="intro">
                 <h2 className="intro">About Me</h2>
                 <div className="container mx-auto">
-                    <div className="flex font-body text-lg">
+                    <div className="flex font-body text-xl">
                         <div className="w-1/2 pr-5">
-                            <p className="text-center leading-normal pt-10">I am currently enrolled in CraftAcademy's full-stack web developer bootcamp. I also have a master's degree in Functional Genomics and some experience in the Molecular Biology field in general. </p>
+                            <div className="px-20">
+                                <img src='./img/laurareale.jpeg' className='rounded-full mx-32'></img>
+                            </div>
+                            <p className="text-center leading-loose pt-10">I am currently enrolled in CraftAcademy's full-stack web developer bootcamp. I also have a master's degree in Functional Genomics and some experience in the Molecular Biology field in general. </p>
                         </div>
                         <div className="w-1/2 px-16">
-                            <p className="text-center">Here's a few of the tools I use</p>
+                            <p className="text-center font-title text-xl font-bold">Here's a few of the tools I use</p>
                             <div className="container mx-auto font-title">
-                                <div className="flex">
+                                <div className="flex pt-5">
                                     <div className="w-1/2 p-5">
                                         <div className="list-reset text-center leading-loose">
                                             <li>HTML5</li>
                                             <li>CSS3</li>
                                             <li>React</li>
-                                            <li></li>
+                                            <li>Rails</li>
                                         </div>
                                     </div>
                                     <div className="w-1/2 p-5">
