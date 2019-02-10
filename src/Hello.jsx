@@ -140,7 +140,7 @@ export const Contact = class Contact extends React.Component {
         return (
             <section className="contact container mx-auto font-body" id="contact">
                 <h2>Contact</h2>
-                <form className="w-full items-center">
+                <form className="w-full items-center" name="contact" method="POST" data-netlify="true">
                     <div className="flex items-center border-b border-b-2 border-blue-darkest my-10">
                         <input
                             className="appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none"
