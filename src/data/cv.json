@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "when": "Jan-Apr2019",
+        "name": "Full Stack Web Developer Bootcamp",
+        "place": "Craft Academy, Gothenburg",
+        "location": "Gothenburg, Sweden"
+    },
+    {
+        "id": 2,
+        "when": "2016-2018",
+        "name": "Lab Technician",
+        "place": "TATAA Biocenter, Gothenburg, Sweden",
+        "location": "Gothenburg, Sweden"
+    },
+    {
+        "id": 3,
+        "when": "2013-2015",
+        "name": "Master's Degree in Functional Genomics",
+        "place": "University of Trieste",
+        "location": "Trieste, Italy"
+    },
+    {
+        "id": 4,
+        "when": "2008-2013",
+        "name": "Bachelor's Degree in Biology",
+        "place": "University of Trieste",
+        "location": "Trieste, Italy"
+    },
+    {
+        "id": 5,
+        "when": "2002-2007",
+        "name": "Scientific High School Degree",
+        "place": "Liceo Scientifico Statale Leonardo",
+        "location": "Brescia, Italy"
+    }
+]
