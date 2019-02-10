@@ -15,7 +15,23 @@
 }
 
 .navigation {
-    @apply flex items-center justify-between flex-wrap bg-blue-darkest p-6;
+    @apply flex items-center justify-between flex-wrap bg-blue-darkest p-6 text-white;
+}
+
+.navigation a {
+    @apply text-white;
+}
+
+.navigation-second {
+    @apply flex items-center justify-between flex-wrap text-blue-darkest bg-white p-6;
+}
+
+.navigation-second a {
+    @apply text-blue-darkest;
+}
+
+.trans-slow {
+    transition-duration: .8s;
 }
 
 .navigation-title {
@@ -39,7 +55,7 @@
 }
 
 .link-text {
-    @apply text-white no-underline;
+    @apply no-underline;
 }
 
 h2 {
