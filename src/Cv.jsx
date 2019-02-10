@@ -44,14 +44,14 @@ class Cv extends Component {
             <div className="content-wrapper">
                 <div className="flex mb-4">
                     <div className="w-1/2 pr-5">
-                        <div className="px-20">
+                        <div className="px-20 pt-20 ml-32">
                             <img src='./img/laurareale.jpeg' className='rounded-full mx-32'></img>
                         </div>
                         <div className="w-3/4">
                         </div>
                     </div>
                     <div className="text-black">
-                        <h1 id="cv-title" className="p-10">Curriculum Vitae</h1>
+                        <h1 id="cv-title" className="mb-5 mt-20">Curriculum Vitae</h1>
                         {cvList}
                     </div>
                 </div>

@@ -57,6 +57,9 @@ export const Intro = class Intro extends React.Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="p-10 text-center text-bold font-title">
+                                    <a href="./Cv">Check my CV !</a>
+                                </div>
                             </div>
                         </div>
                     </div>

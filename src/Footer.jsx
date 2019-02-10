@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer-wrapper">
             <div className="footer-content">
-                Made with React
+                Made by Laura Reale with React 
             </div>
         </div >
     )

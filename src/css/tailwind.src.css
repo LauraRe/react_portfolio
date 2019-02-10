@@ -123,7 +123,7 @@ header {
 }
 
 #cv-when {
-    @apply text-black text-center font-title text-lg pt-5;
+    @apply text-black text-center font-title text-lg pt-10;
     letter-spacing: 1px;
 }
   
