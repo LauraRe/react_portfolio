@@ -1,4 +1,6 @@
-# My Portfolio
+### To visit my personal porfolio:  https://laurareportfolio.netlify.com/
+
+# My Portfolio 
 ## Getting started 
 ---
 ### Prerequisites
@@ -18,8 +20,10 @@ $ npm start
 $ npm run build
 ```
 ## Deployment
+---
 * Netlify  
 https://www.netlify.com/
+
 * GitHub Pages  
 https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
 ## Built with
@@ -38,6 +42,9 @@ https://help.github.com/articles/configuring-a-publishing-source-for-github-page
 ## Acknowledgments
 ---
 * README-template structure: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+* Portfolio structure:  
+https://codepen.io/Justeffie/pen/   
+https://codepen.io/sonorangirl/pen/pjzqWj
 
 ## To do list
 ---
