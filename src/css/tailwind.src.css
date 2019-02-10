@@ -15,7 +15,23 @@
 }
 
 .navigation {
-    @apply flex items-center justify-between flex-wrap bg-blue-darkest p-6;
+    @apply flex items-center justify-between flex-wrap bg-blue-darkest p-6 text-white;
+}
+
+.navigation a {
+    @apply text-white;
+}
+
+.navigation-second {
+    @apply flex items-center justify-between flex-wrap text-blue-darkest bg-white p-6;
+}
+
+.navigation-second a {
+    @apply text-blue-darkest;
+}
+
+.trans-slow {
+    transition-duration: .8s;
 }
 
 .navigation-title {
@@ -39,7 +55,7 @@
 }
 
 .link-text {
-    @apply text-white no-underline;
+    @apply no-underline;
 }
 
 h2 {
@@ -105,6 +121,26 @@ header {
 
 #meetme {
     @apply bg-blue-darkest text-white w-full flex flex-col items-center justify-center;
+}
+
+#cv-title {
+    @apply text-black text-center font-title text-5xl;
+    letter-spacing: 1px;
+}
+
+#cv-list {
+    @apply text-black text-center font-title font-bold text-2xl;
+    letter-spacing: 1px;
+}
+
+#cv-details {
+    @apply text-black text-center font-title font-semibold text-lg;
+    letter-spacing: 1px;
+}
+
+#cv-when {
+    @apply text-black text-center font-title text-lg pt-10;
+    letter-spacing: 1px;
 }
   
 section {
