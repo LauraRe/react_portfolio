@@ -128,6 +128,33 @@ export const Portfolio = class Portfolio extends React.Component {
                             <a href="https://github.com/LauraRe/address_book_challenge"><button className="btn">=> See Address Book Code on GitHub</button></a>
                         </div>
                     </div>
+
+                    <div className="flex">
+                        <div className="w-1/2 p-5">
+                            <a href="https://rps-laurare.netlify.com/">
+                                <article className="w-full">
+                                    <div className="jod-desc">
+                                        <h3>Rock-Paper-Scissors</h3>
+                                        <p>Rock-Paper-Scissors challenge in JavaScript.</p>
+                                    </div>
+                                    <img src="./img/rps.png" className="img-fluid" />
+                                </article>
+                            </a>
+                            <a href="https://github.com/LauraRe/rps_challenge"><button className="btn">=> See RPS Code on GitHub</button></a>
+                        </div>
+                        <div className="w-1/2 p-5">
+                            <a href="https://khronos.netlify.com/">
+                                <article className="w-full">
+                                    <div className="jod-desc">
+                                        <h3>khronos</h3>
+                                        <p>A time-tracking app where you can track your work and invoice your clients.</p>
+                                    </div>
+                                    <img src="./img/khronos.png" className="img-fluid" />
+                                </article>
+                            </a>
+                            <a href="https://github.com/LauraRe/khronos"><button className="btn">=> See Khronos Code on GitHub</button></a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
