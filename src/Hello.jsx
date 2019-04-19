@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { Project } from "./Project";
 
 library.add(faGithub, faEnvelope, faLinkedin)
 
@@ -69,94 +70,64 @@ export const Intro = class Intro extends React.Component {
     }
 }
 
-export const Portfolio = class Portfolio extends React.Component {
+const Portfolio = class Portfolio extends React.Component {
     render() {
         return (
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div className="container mx-auto">
                     <div className="flex">
-                        <div className="w-1/2 p-5">
-                            <a href="https://laurare.github.io/">
-                                <article className="w-full">
-                                    <div className="jod-desc">
-                                        <h3>My First Webpage</h3>
-                                        <p>The very first webpage that I have ever created.</p>
-                                    </div>
-                                    <img src="./img/MyFirstWebpage.png" className="img-fluid" />
-                                </article>
-                            </a>
-                            <a href="https://github.com/LauraRe/LauraRe.github.io"><button className="btn">=> See MyFirstWebsite Code On GitHub</button></a>
-                        </div>
-                        <div className="w-1/2 p-5">
-                            <a href="https://laurare.github.io/bmi_challenge/src">
-                                <article className="w-full">
-                                    <div className="jod-desc">
-                                        <h3>Body Mass Index (BMI)</h3>
-                                        <p>A JavaScript program that calculates an individual`s BMI index with metric and imperial methods.</p>
-                                    </div>
-                                    <img src="./img/bmi.png" className="img-fluid" />
-                                </article>
-                            </a>
-                            <a href="https://github.com/LauraRe/bmi_challenge"><button className="btn">=> See BMI Code on GitHub</button></a>
-                        </div>
+                        <Project
+                            site="https://laurare.github.io/"
+                            title="My First Webpage"
+                            description="The very first webpage that I have ever created."
+                            image="./img/MyFirstWebpage.png"
+                            github="https://github.com/LauraRe/LauraRe.github.io"
+                        />
+                        <Project
+                            site="https://laurare.github.io/bmi_challenge/src"
+                            title="Body Mass Index (BMI)"
+                            description="A JavaScript program that calculates an individual`s BMI index with metric and imperial methods."
+                            image="./img/bmi.png"
+                            github="https://github.com/LauraRe/bmi_challenge"
+                        />
                     </div>
 
                     <div className="flex">
-                        <div className="w-1/2 p-5">
-                            <a href="https://laurare.github.io/fizzbuzz_js/">
-                                <article className="w-full">
-                                    <div className="jod-desc">
-                                        <h3>FizzBuzz</h3>
-                                        <p>FizzBuzz challenge in JavaScript.</p>
-                                    </div>
-                                    <img src="./img/FizzBuzz_js1.png" className="img-fluid" />
-                                </article>
-                            </a>
-                            <a href="https://github.com/LauraRe/fizzbuzz_js"><button className="btn">=> See FizzBuzz Code on GitHub</button></a>
-                        </div>
-                        <div className="w-1/2 p-5">
-                            <a href="https://laurare.github.io/address_book_challenge/">
-                                <article className="w-full">
-                                    <div className="jod-desc">
-                                        <h3>Address Book</h3>
-                                        <p>A simple address book page where you can manage your contacts.</p>
-                                    </div>
-                                    <img src="./img/AddressBook.png" className="img-fluid" />
-                                </article>
-                            </a>
-                            <a href="https://github.com/LauraRe/address_book_challenge"><button className="btn">=> See Address Book Code on GitHub</button></a>
-                        </div>
+                        <Project
+                            site="https://laurare.github.io/fizzbuzz_js/"
+                            title="FizzBuzz"
+                            description="FizzBuzz challenge in JavaScript."
+                            image="./img/FizzBuzz_js1.png"
+                            github="https://github.com/LauraRe/fizzbuzz_js"
+                        />
+                        <Project
+                            site="https://laurare.github.io/address_book_challenge/"
+                            title="Address Book"
+                            description="A simple address book page where you can manage your contacts."
+                            image="./img/AddressBook.png"
+                            github="https://github.com/LauraRe/address_book_challenge"
+                        />
                     </div>
 
                     <div className="flex">
-                        <div className="w-1/2 p-5">
-                            <a href="https://rps-laurare.netlify.com/">
-                                <article className="w-full">
-                                    <div className="jod-desc">
-                                        <h3>Rock-Paper-Scissors</h3>
-                                        <p>Rock-Paper-Scissors challenge in JavaScript.</p>
-                                    </div>
-                                    <img src="./img/rps.png" className="img-fluid" />
-                                </article>
-                            </a>
-                            <a href="https://github.com/LauraRe/rps_challenge"><button className="btn">=> See RPS Code on GitHub</button></a>
-                        </div>
-                        <div className="w-1/2 p-5">
-                            <a href="https://khronos.netlify.com/">
-                                <article className="w-full">
-                                    <div className="jod-desc">
-                                        <h3>khronos</h3>
-                                        <p>A time-tracking app where you can track your work and invoice your clients.</p>
-                                    </div>
-                                    <img src="./img/khronos.png" className="img-fluid" />
-                                </article>
-                            </a>
-                            <a href="https://github.com/LauraRe/khronos"><button className="btn">=> See Khronos Code on GitHub</button></a>
-                        </div>
+                        <Project
+                            site="https://rps-laurare.netlify.com/"
+                            title="Rock-Paper-Scissors"
+                            description="Rock-Paper-Scissors challenge in JavaScript."
+                            image="./img/rps.png"
+                            github="https://github.com/LauraRe/rps_challenge"
+                        />
+                        <Project
+                            site="https://khronos.netlify.com/"
+                            title="khronos"
+                            description="A time-tracking app where you can track your work and invoice your clients."
+                            image="./img//khronos.png"
+                            github="https://github.com/LauraRe/khronos"
+                        />
                     </div>
                 </div>
-            </section>
+            </section >
 
         );
     }
